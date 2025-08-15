@@ -4,7 +4,7 @@
         const data = await res.json();
 
         if (data.length > 0) {
-            const latest = data[data.length - 1];
+            const latest = data[0];
 
             document.getElementById('curTemp').textContent = latest.temperature.toFixed(2);
             document.getElementById('curHumidity').textContent = latest.humidity.toFixed(2);
