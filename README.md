@@ -44,6 +44,7 @@ En klient skrevet i C abonnerer på det relevante MQTT-topic og indsætter nye d
 
 ### MySQL Database
 Databasen gemmer vejrdata i en tabel med felter såsom temperatur, luftfugtighed, tryk og timestamp. Timestamp gemmes som en BIGINT i dansk tid (CET/CEST) i formatet: YYYYMMDDHHMMSS.
+
 <img width="620" height="181" alt="mysqlDBtable" src="https://github.com/user-attachments/assets/8105e595-b060-4a2b-8fc1-f04395ca3aa3" />
 
 ### Grafana
