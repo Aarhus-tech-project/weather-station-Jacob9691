@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <h1>Current Weather</h1>
+    <div class="current-data">
+        <div>Temperature: <span id="curTemp">--</span> °C</div>
+        <div>Humidity: <span id="curHumidity">--</span> %</div>
+        <div>Pressure: <span id="curPressure">--</span> hPa</div>
+        <div>Altitude: <span id="curAltitude">--</span> m</div>
+    </div>
+
+    <h1>Weather Station Data</h1>
+    <div class="chart-container">
+        <canvas id="tempChart"></canvas>
+        <canvas id="humidityChart"></canvas>
+        <canvas id="pressureChart"></canvas>
+    </div>
+
+    <script src="/js/weather.js"></script>
+</body>
+</html>
