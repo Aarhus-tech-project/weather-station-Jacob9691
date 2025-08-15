@@ -32,4 +32,10 @@ Koden gør brug af Arduinoens wifi funktion. Hvor den henter UTC tid for timesta
 - MySQL Database
 - Grafana
 - .NET API app (frontend og API)
-- 
+## Grafana
+<img width="1895" height="753" alt="grafanaImage" src="https://github.com/user-attachments/assets/a742d465-7d88-487a-bf3b-d23ed5f1a655" />
+
+## API og Frontend
+<img width="1888" height="888" alt="weatherStationSite" src="https://github.com/user-attachments/assets/d279580c-80ab-4d8b-bf85-b434f847aaa3" />
+
+
