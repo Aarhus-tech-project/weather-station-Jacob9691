@@ -23,9 +23,16 @@ Koden gør brug af Arduinoens wifi funktion. Hvor den henter UTC tid for timesta
 ## Netværk opsætning
 - Netværk: 192.168.103.0/24
 - Default gateway: 192.168.103.1
-- Webserver: 192.168.103.11 (fronent)
+- Webserver: 192.168.103.11 (frontent)
 - API: 192.168.103.11/api/weather
 - Grafana 192.168.103.11:3000
+  
+Ubuntu login:
+
+user: gruppe3
+
+password: Datait2025!
+
 ## Server programs
 - MQTT broker (mosquitto)
 - MQTT client (C service program)
