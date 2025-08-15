@@ -40,7 +40,9 @@ Koden gør brug af Arduinoens wifi funktion. Hvor den henter UTC tid for timesta
 Mosquitto fungerer som MQTT-broker og modtager vejrdata fra Arduinoen. Brokeren er konfigureret til at acceptere lokale forbindelser fra både sensoren og den interne klient.
 
 ### MQTT client (C service program)
-En klient skrevet i C abonnerer på det relevante MQTT-topic og indsætter nye data i MySQL-databasen. Dette program kører som en baggrundsservice på serveren.
+MQTT-klienten er et program skrevet i C, som abonnerer på mit MQTT-topic (weather/station1) og indsætter de modtagne vejrdata direkte i MySQL-databasen. Programmet er konfigureret til at køre som en baggrundsservice på serveren og starter automatisk op ved boot.
+
+For at beskytte følsomme oplysninger som MySQL-brugernavn og adgangskode, er disse gemt i en .env-fil. Dette sikrer, at loginoplysninger ikke eksponeres i kildekoden eller versionsstyring.
 
 ### MySQL Database
 Databasen gemmer vejrdata i en tabel med felter såsom temperatur, luftfugtighed, tryk og timestamp. Timestamp gemmes som en BIGINT i dansk tid (CET/CEST) i formatet: YYYYMMDDHHMMSS.
